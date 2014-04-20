@@ -27,6 +27,3 @@ class Trigger
 		master.beast.trigger
 
 
-
-
-exports.Trigger=Trigger
