@@ -1,13 +1,13 @@
 {
   "name": "Beast-Trigger",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This is to have triggers that are detached from any object. This provides a way to execute a function if there is a listener. Or else silently failed if there isn't a listener",
   "main": "bin/trigger.min.js",
   "scripts": {
-    "build":"npm -q run-script build-coffee &; npm run-script build-sugar &",
+    "build": "npm -q run-script build-coffee &; npm run-script build-sugar &",
     "build-sugar": "node node_modules/coffee-stir/bin/cli.js -o bin/main.coffee src/main.coffee",
-    "build-coffee":"node node_modules/coffee-script/bin/coffee -c -j bin/trigger.js bin/main.coffee",
-    "test":"npm run-script build-sugar && npm run-script build-coffee && node node_modules/coffee-script/bin/coffee -c test/*coffee  && node test/TestTrigger"
+    "build-coffee": "node node_modules/coffee-script/bin/coffee -c -j bin/trigger.js bin/main.coffee",
+    "test": "npm run-script build-sugar && npm run-script build-coffee && node node_modules/coffee-script/bin/coffee -c test/*coffee  && node test/TestTrigger"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,10 @@
     "beast-javascript",
     "beeastjavascript"
   ],
-  "devDependencies":{
-      "beast-test":"*",
-      "coffee-stir":"*",
-      "coffee-script":"*"
+  "devDependencies": {
+    "beast-test": "*",
+    "coffee-stir": "*",
+    "coffee-script": "*"
   },
   "author": "Shavauhn Gabay",
   "license": "MIT"
